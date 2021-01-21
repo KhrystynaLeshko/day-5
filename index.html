@@ -4,68 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
-      .circle {
-        height: 50px;
-        background-color: maroon;
-        width: 50px;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation-name: jumpAround;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+      div {
+        height: 25vh;
+        border: 1px solid black;
       }
 
-      @keyframes jumpAround {
-        0% {
-          background-color: turquoise;
-          /* transform: translateY(-100%); */
-          transform: translate(0, 0);
-        }
-        10% {
-          background-color: red;
-          /* transform: translateY(-100%); */
-          top: 80px;
-        }
-        20% {
-          background-color: grey;
-          top: 80%;
-          left: 70%;
-        }
-        30% {
-          background-color: yellow;
-        }
+      section {
+        /* height: 80%; */
+        height: 90px;
+        width: 80%;
+        background: magenta;
+        position: absolute;
+        bottom: 10px;
+      }
 
-        50% {
-          /* transform: translateY(-200%); */
-          border-radius: 0px;
-          width: 70vw;
-          transform: rotate(1000deg);
-        }
-        80% {
-          background-color: blue;
-        }
+      aside {
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 100px;
+        background-color: yellow;
+        transform: translateY(-50%);
+      }
 
-        100% {
-          background: tomato;
-        }
+      article {
+        position: relative;
+        background-color: mediumblue;
+        height: 25vh;
+        bottom: 100px;
+        /* width: 100vw; */
+      }
 
-        /* from {
-          background-color: turquoise;
-        }
-        to {
-          background-color: indigo;
-        } */
+      nav {
+        position: fixed;
+      }
+
+      p {
+        position: sticky;
+        top: 10%;
       }
     </style>
   </head>
   <body>
+    <nav>FIXED</nav>
+    <footer style="height: 200vh; background: green"></footer>
+    <footer>1</footer>
+    <p>PARAGRAPH</p>
+    <div>
+      2
+      <footer style="height: 200vh; background: green"></footer>
+
+      <section></section>
+    </div>
+    <article>
+      3
+      <aside></aside>
+    </article>
+    <div>4</div>
+    <!-- <h1>Static -> Default</h1>
     <h1>
+      Relative -> It will be positioned relatively to where it is initially
+      starting
+    </h1> -->
+    <!-- <div style="height: 50px; background-color: blue"></div>
+
+    <div id="bigAssDiv" style="height: 200vh; background-color: red">
+      <div class="relative">Relative</div>
+    </div> -->
+    <!-- <h1>
       Look for transform properties and these are the funniest ones to animate
     </h1>
     <nav>
@@ -76,6 +84,6 @@
       <h1>This would be the body</h1>
     </section>
 
-    <div class="circle"></div>
+    <div class="circle"></div> -->
   </body>
 </html>
