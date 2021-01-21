@@ -1,0 +1,30 @@
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  background-color: red;
+  width: 100vw;
+}
+
+a:hover {
+  font-size: 100px;
+  position: absolute;
+  top: 50;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  width: 50vw;
+  transition: all 1s ease-in;
+}
+
+h1:hover {
+  background-color: red;
+  /* transform: rotate(18000deg); */
+  transform: skew(70deg);
+  width: 80vw;
+  height: 30vh;
+  color: green;
+}
